@@ -1,7 +1,7 @@
 # dio-desafio-gitHub
 ## Desafio de projeto da Dio 
 
-Neste repositório irei postar resumos de cursos que farei dentro de alguns bootcamps da DIO.
+Neste repositório irei postar códigos de cursos que farei dentro de alguns bootcamps da DIO.
 
 ### Links úteis
 
