@@ -98,7 +98,7 @@ public class fixando {
         System.out.println("Digite uma letra: ");
         letra = input.next().charAt(0);
 
-        if (letra == 'A' || letra == 'B' || letra == 'C' || letra == 'D' || letra == 'E'){
+        if (letra == 'A' || letra == 'E' || letra == 'I' || letra == 'O' || letra == 'U'){
             System.out.println("esta letra é uma vogal: " + letra);
         }else{
             System.out.println("esta letra é uma consoante: " + letra);
