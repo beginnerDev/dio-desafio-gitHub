@@ -23,6 +23,12 @@ public class fixando {
             vogOrConso();
         }else if(opcaoSelecionada == 5){
             aprovOuReprove();
+        }else if(opcaoSelecionada == 6){
+            maiorMenor();
+        }else if(opcaoSelecionada == 7){
+            maiorMenorPlus();
+        }else if(opcaoSelecionada == 8){
+            precoProduto();
         }
     }
 
@@ -98,7 +104,7 @@ public class fixando {
         System.out.println("Digite uma letra: ");
         letra = input.next().charAt(0);
 
-        if (letra == 'A' || letra == 'B' || letra == 'C' || letra == 'D' || letra == 'E'){
+        if (letra == 'A' || letra == 'E' || letra == 'I' || letra == 'O' || letra == 'U'){
             System.out.println("esta letra é uma vogal: " + letra);
         }else{
             System.out.println("esta letra é uma consoante: " + letra);
@@ -127,4 +133,75 @@ public class fixando {
             System.out.println("você foi aprovado com distinção! Média: " + media);
         }
     }
+
+    private static void maiorMenor(){
+        // 6º Faça um Programa que leia três números e mostre o maior deles.
+        Scanner input = new Scanner(System.in);
+
+        int num1, num2, num3;
+
+        System.out.println("digite três números: ");
+
+        num1 = input.nextInt();
+        num2 = input.nextInt();
+        num3 = input.nextInt();
+
+        if (num1 > num2 && num1 > num3){
+            System.out.println("o maior entre eles é: " + num1);
+        }else if(num2 > num1 && num2 > num3){
+            System.out.println("o maior entre eles é: " + num2);
+        }else if(num3 > num1 && num3 > num2){
+            System.out.println("o maior entre eles é: " + num3);
+        }
+    }
+    private static void maiorMenorPlus(){
+        // 7º Faça um Programa que leia três números e mostre o maior e o menor deles.
+
+        Scanner input = new Scanner(System.in);
+        int num1, num2, num3;
+
+        System.out.println("digite três números: ");
+
+        num1 = input.nextInt();
+        num2 = input.nextInt();
+        num3 = input.nextInt();
+
+        if (num1 > num2 && num1 > num3){
+            System.out.println("o maior entre eles é: " + num1);
+        }else if(num2 > num1 && num2 > num3){
+            System.out.println("o maior entre eles é: " + num2);
+        }else if(num3 > num1 && num3 > num2){
+            System.out.println("o maior entre eles é: " + num3);
+        }
+        if (num1 < num2 && num1 < num3){
+            System.out.println("e esse é o menor entre eles: " + num1);
+        }else if(num2 < num1 && num2 < num3){
+            System.out.println("e esse é o menor entre eles: " + num2);
+        }else if(num3 < num1 && num3 < num2){
+            System.out.println("e esse é o menor entre eles: " + num3);
+        }
+    }
+      private static void precoProduto(){
+          //8º Faça um programa que pergunte o preço de três produtos e informe qual
+          //produto você deve comprar, sabendo que a decisão é sempre pelo mais barato.
+
+          Scanner input = new Scanner(System.in);
+
+          double prod1, prod2, prod3;
+          System.out.println("informe o preço dos três produtos: ");
+
+          prod1 = input.nextDouble();
+          prod2 = input.nextDouble();
+          prod3 = input.nextDouble();
+
+          if (prod1 < prod2 && prod1 < prod3){
+              System.out.println("o produto que você deve comprar é o mais barato, portanto este: Produto 1 = " + prod1 );
+          }else if(prod2 < prod1 && prod2 < prod3){
+              System.out.println("o produto que você deve comprar é o mais barato, portanto este: Produto 2 = " + prod2 );
+          }else if(prod3 < prod1 && prod3 < prod2){
+              System.out.println("o produto que você deve comprar é o mais barato, portanto este: Produto 3 = " + prod3 );
+          }
+      }
+
+
 }
